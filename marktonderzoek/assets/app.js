@@ -254,14 +254,18 @@
     const r = rows.find((x) => x.id === id);
     if (r) { r.status = e.target.value; store.set("tracker", rows); }
   });
-  $("#exportCsv").addEventListener("click", () => {
+  $("#exportCsv").addEventListener("click", async () => {
     const q = (v) => `"${String(v ?? "").replace(/"/g, '""')}"`;
     const csv = ["Organisatie;Functie;Deadline;Status;Notitie", ...rows.map((r) => [r.org, r.functie, r.deadline, r.status, r.notitie].map(q).join(";"))].join("\n");
-    const a = document.createElement("a");
-    a.href = URL.createObjectURL(new Blob(["﻿" + csv], { type: "text/csv;charset=utf-8" }));
-    a.download = "sollicitaties.csv";
-    a.click();
-    URL.revokeObjectURL(a.href);
+    const msg = $("#exportMsg");
+    try {
+      await navigator.clipboard.writeText(csv);
+      msg.textContent = "CSV gekopieerd. Plak het in Excel, Numbers of Google Sheets.";
+    } catch (e) {
+      const ta = $("#csvOut");
+      ta.value = csv; ta.hidden = false; ta.select();
+      msg.textContent = "Kopiëren lukte niet automatisch. Selecteer de tekst hieronder en kopieer die zelf.";
+    }
   });
   renderTracker();
 

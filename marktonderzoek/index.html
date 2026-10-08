@@ -312,7 +312,7 @@
 <!-- ───────────── TRACKER ───────────── -->
 <section id="tracker">
   <h2>11 · Sollicitatietracker</h2>
-  <p>Houd je sollicitaties bij. De gegevens worden alleen lokaal in deze browser opgeslagen. Exporteer ze regelmatig als CSV voor een back-up.</p>
+  <p>Houd je sollicitaties bij. De gegevens worden alleen lokaal in deze browser opgeslagen. Kopieer ze regelmatig als CSV voor een back-up.</p>
   <form id="trackForm" class="track-form">
     <input name="org" placeholder="Organisatie" required>
     <input name="functie" placeholder="Functie" required>
@@ -331,7 +331,9 @@
     </table>
   </div>
   <p class="empty" id="trackEmpty">Nog niets toegevoegd. Tip: gebruik ☆ in de organisatiedatabase om favorieten te markeren.</p>
-  <button type="button" class="ghost" id="exportCsv">Exporteer CSV</button>
+  <button type="button" class="ghost" id="exportCsv">Kopieer als CSV</button>
+  <p class="note" id="exportMsg" aria-live="polite"></p>
+  <textarea id="csvOut" class="csv-out" rows="6" hidden aria-label="CSV-export"></textarea>
 </section>
 
 <!-- ───────────── BRONNEN ───────────── -->

@@ -60,7 +60,7 @@ li { margin-bottom: .35em; }
 .skip:focus { left: 1rem; top: 1rem; background: var(--surface); padding: .5rem 1rem; z-index: 100; }
 
 /* Topbar */
-.topbar { position: sticky; top: 0; z-index: 50; background: color-mix(in srgb, var(--bg) 88%, transparent); backdrop-filter: blur(10px); border-bottom: 1px solid var(--border); }
+.topbar { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 50; background: color-mix(in srgb, var(--bg) 88%, transparent); backdrop-filter: blur(10px); border-bottom: 1px solid var(--border); }
 .topbar-inner { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; gap: 1rem; padding: .6rem 16px; }
 .brand { font-weight: 700; text-decoration: none; color: var(--text); white-space: nowrap; }
 .brand span { color: var(--muted); font-weight: 400; }
@@ -235,6 +235,7 @@ button[type=submit] { background: var(--accent); color: var(--surface); }
 table.track { width: 100%; border-collapse: collapse; font-size: .9rem; background: var(--surface); border-radius: var(--radius); }
 table.track th, table.track td { padding: .55rem .6rem; border-bottom: 1px solid var(--border); text-align: left; }
 table.track th { font-size: .75rem; text-transform: uppercase; color: var(--muted); letter-spacing: .04em; }
+.csv-out { width: 100%; font: .8rem/1.4 ui-monospace, Menlo, monospace; background: var(--surface); color: var(--text); border: 1px solid var(--border); border-radius: 8px; padding: .5rem; }
 .del { border: 0; background: none; color: var(--bad); cursor: pointer; font-size: 1rem; }
 
 /* Platforms & bronnen */

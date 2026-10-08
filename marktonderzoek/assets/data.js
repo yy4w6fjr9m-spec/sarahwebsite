@@ -358,3 +358,49 @@ window.BRONNEN = [
   ["Gemeente Den Haag — Internationale organisaties", "https://www.denhaag.nl/nl/stad-van-vrede-en-recht/internationale-organisaties-in-den-haag"],
   ["Just Peace The Hague — Humanity Hub", "https://www.justpeacethehague.org/en/venue/the-hague-humanity-hub"]
 ];
+
+/* ───────────── Actuele vacatures (gevonden 8 okt. 2026) ─────────────
+ * status: "open" (deadline in de toekomst bevestigd), "onzeker" (gezien, maar
+ * deadline of status niet bevestigd), "gesloten" (net gesloten, ter referentie).
+ * deadline: "JJJJ-MM-DD" of null. Controleer altijd de officiële vacature.
+ */
+window.VACATURES = [
+  { t: "Schuman traineeship (1 mrt – 31 jul 2027)", org: "Europees Parlement", loc: "Brussel / Luxemburg / Straatsburg / liaisonbureau Den Haag", deadline: "2026-10-31", status: "open", niveau: "Traineeship (betaald)", fit: 3,
+    u: "https://ep-stages.gestmax.eu", note: "Universitair diploma en EU-nationaliteit vereist. Kies voor DG EXPO of de subcommissie Mensenrechten (DROI). De deadline is 23:59 Brusselse tijd." },
+  { t: "Traineeship North-South Centre (1 mrt – 31 jul 2027)", org: "Raad van Europa — North-South Centre", loc: "Lissabon", deadline: "2026-10-31", status: "open", niveau: "Traineeship (€200/mnd + verzekering)", fit: 2,
+    u: "https://www.heysuccess.com/opportunity/North-South-Centre-of-the-Council-of-Europe-Traineeship-(1-March-31-July-2027)-25898", note: "Werkt aan mondiaal burgerschap en jongerenbeleid. Het staat goed op je cv voor de Raad van Europa, maar de vergoeding is laag." },
+  { t: "Beleidsondersteuner internationale zaken", org: "Ministerie van Infrastructuur en Waterstaat", loc: "Den Haag", deadline: "2026-10-12", status: "open", niveau: "Schaal 9 (€ 3.579 – € 4.999), hbo-niveau, 32–36 u", fit: 2,
+    u: "https://www.werkenvoornederland.nl/vacatures/beleidsondersteuner-internationale-zaken-IM-2026-1184", note: "Onder je niveau, maar wel een directe ingang bij het Rijk via de directie Internationaal (EU, bilateraal, mondiaal). Als rijksmedewerker maak je kans bij interne werving, zoals voor IBBZ in 2026." },
+  { t: "Public Information Assistant (G-4)", org: "Internationaal Strafhof (ICC)", loc: "Den Haag", deadline: "2026-10-12", status: "open", niveau: "G-4 (ondersteunend)", fit: 2,
+    u: "https://www.icc-cpi.int/jobs/vacancies", note: "Ref. 24545. Een ondersteunende functie, maar wel binnen het Hof. De deadline geldt in Haagse tijd." },
+  { t: "Analyst Assistant (G-7)", org: "Internationaal Strafhof (ICC)", loc: "Den Haag", deadline: "2026-10-25", status: "open", niveau: "G-7 (vraagt meestal meerdere jaren ervaring)", fit: 2,
+    u: "https://www.icc-cpi.int/jobs/vacancies", note: "Ref. 24523. Analysewerk ligt dicht bij je HRW-onderzoek. Controleer de ervaringseis in de vacaturetekst." },
+  { t: "Document Management Assistant (G-4)", org: "Internationaal Strafhof (ICC)", loc: "Den Haag", deadline: "2026-11-01", status: "open", niveau: "G-4 (ondersteunend)", fit: 1,
+    u: "https://www.icc-cpi.int/jobs/vacancies", note: "Ref. 24549. Vooral administratief. Alleen interessant om binnen te komen." },
+  { t: "Witness Assistant (ad hoc contractor)", org: "Internationaal Strafhof (ICC)", loc: "Den Haag", deadline: "2026-12-31", status: "open", niveau: "Tijdelijk contract", fit: 2,
+    u: "https://www.icc-cpi.int/jobs/vacancies", note: "Ref. 24303. Begeleiding van getuigen. Inhoudelijk relevant voor slachtoffer- en getuigenwerk." },
+  { t: "Associate Legal Officer (P-2)", org: "Internationaal Strafhof (ICC)", loc: "Den Haag", deadline: "2026-10-09", status: "open", niveau: "P-2 (juridisch)", fit: 1,
+    u: "https://www.icc-cpi.int/jobs/vacancies", note: "Ref. 24540. Vraagt waarschijnlijk een rechtenmaster, dus past niet goed bij IDS. Opgenomen ter volledigheid. De deadline is 9 oktober." },
+  { t: "Internships Public Information & Outreach", org: "Internationaal Strafhof (ICC)", loc: "Den Haag", deadline: null, status: "onzeker", niveau: "Internship", fit: 2,
+    u: "https://unjobs.org/offices/icc_hag", note: "Bijgewerkt op 2 oktober 2026. Er zijn ook taalvarianten (Arabisch, Filipijns). Controleer of afgestudeerden in aanmerking komen en of er een vergoeding is." },
+  { t: "Planning, Monitoring, Evaluation & Learning (PMEL)", org: "Amnesty International Nederland", loc: "Amsterdam", deadline: null, status: "onzeker", niveau: "Onbekend", fit: 2,
+    u: "https://nl.indeed.com/q-international-amnesty-vacatures.html", note: "Gezien op 3 oktober 2026. Werkt aan rapportages over de impact van Amnesty NL. Controleer de deadline op amnesty.nl/werken-bij-amnesty." },
+  { t: "Policy & capacity building officer — Police and Human Rights", org: "Amnesty International (Police & Human Rights Programme)", loc: "Amsterdam", deadline: null, status: "onzeker", niveau: "Onbekend", fit: 3,
+    u: "https://www.oneworld.nl/job/policy-and-capacity-building-officer-police-and-human-rights/", note: "Mensenrechten en politie: een goede match. Controleer status, niveau en deadline." },
+  { t: "Programme Assistant (vrijwillig, 8–16 u/week)", org: "Amnesty International (Police & Human Rights Programme)", loc: "Amsterdam", deadline: null, status: "onzeker", niveau: "Vrijwilligerswerk", fit: 2,
+    u: "https://www.oneworld.nl/job/programme-assistant-volunteer/", note: "Onbetaald, maar te combineren met een baan. Het levert netwerk en een Amnesty-referentie op." },
+  { t: "Junior programmamedewerker Migratie & Mensenrechten", org: "Justice & Peace Netherlands", loc: "Den Haag", deadline: null, status: "onzeker", niveau: "Junior", fit: 3,
+    u: "https://justiceandpeace.nl/vacancy_category/vacatures/", note: "Gezien via LinkedIn, maar de datum is onduidelijk. Een zeer goede match, dus check dit vandaag." },
+  { t: "Junior Programme Officer (24 u/week)", org: "Human Security Collective", loc: "Den Haag", deadline: null, status: "onzeker", niveau: "Junior", fit: 3,
+    u: "https://www.hscollective.org/about-us/vacancy/", note: "Start was 1 oktober 2026, dus de vacature is mogelijk al ingevuld. Werkt aan veiligheid, burgerruimte en mensenrechten. Stuur desnoods een open sollicitatie." },
+  { t: "Project Officer", org: "Oxfam Novib", loc: "Den Haag", deadline: null, status: "onzeker", niveau: "Medior?", fit: 2,
+    u: "https://unjobs.org/offices/oxfam-novib_hag", note: "Geplaatst juli–augustus 2026. Waarschijnlijk gesloten, maar check de Oxfam Novib-vacaturesite." },
+  { t: "2 promotieplekken: Government Responses to Internal Displacement (ERC)", org: "Universiteit van Amsterdam", loc: "Amsterdam", deadline: "2026-10-01", status: "gesloten", niveau: "PhD", fit: 3,
+    u: "https://werkenbij.uva.nl/en/vacancies/2-phd-positions-government-responses-to-internal-displacement-erc-project-netherlands-15380", note: "Precies jouw terrein, maar net gesloten. Dit type ERC-projectplek komt regelmatig voorbij. Zet een alert op AcademicTransfer en benader de projectleider voor toekomstige plekken." },
+  { t: "Junior Humanitarian Programme Officer", org: "Plan International Nederland", loc: "Amsterdam", deadline: "2026-06-10", status: "gesloten", niveau: "Junior (6 mnd)", fit: 3,
+    u: "https://www.oneworld.nl/job/junior-humanitarian-programme-officer-2/", note: "Werd eerder gesloten wegens veel reacties. Les: solliciteer in de eerste week na plaatsing." },
+  { t: "Junior beleidsmedewerker (schaal 10)", org: "Ministerie van BZK", loc: "Den Haag", deadline: "2026-07-13", status: "gesloten", niveau: "Junior, schaal 10", fit: 2,
+    u: "https://www.werkenvoornederland.nl/vacatures/junior-beleidsmedewerker-beleidssecretaris-overheidsbrede-dienstverlening-BZK-2026-8179", note: "Een voorbeeld van een junior rijksfunctie op schaal 10. Zulke functies komen geregeld langs op Werken voor Nederland." },
+  { t: "Research Assistant (Energy, Industrialisation & Finance)", org: "ECDPM", loc: "Maastricht / Brussel", deadline: "2026-06-12", status: "gesloten", niveau: "Junior", fit: 2,
+    u: "https://jobsin.brussels/jobs/european-centre-for-development-policy-management-research-assistant-energy-industrialisation-and-finance-2026-06/", note: "ECDPM werft meerdere keren per jaar research assistants." }
+];

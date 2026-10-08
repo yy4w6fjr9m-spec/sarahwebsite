@@ -181,6 +181,23 @@ blockquote { margin: 0; padding: .8rem 1rem; border-left: 3px solid var(--accent
 .tip { background: var(--surface-2); border-radius: 8px; padding: .55rem .75rem; margin: 0; }
 @media (max-width: 480px) { .prog dl { grid-template-columns: 1fr; } .prog dd { margin-bottom: .4rem; } }
 
+/* Vacatures */
+.vacs { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr)); gap: 1rem; }
+.vac { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 1rem 1.1rem; display: flex; flex-direction: column; box-shadow: var(--shadow); font-size: .92rem; border-top: 4px solid var(--border); min-width: 0; }
+.vac-open { border-top-color: var(--good); }
+.vac-onzeker { border-top-color: var(--mid); }
+.vac-gesloten { border-top-color: var(--bad); opacity: .85; }
+.vac header { display: flex; justify-content: space-between; align-items: center; gap: .5rem; flex-wrap: wrap; }
+.vac h3 { margin: .5rem 0 .2rem; font-size: 1.02rem; }
+.vac p { margin-bottom: .45rem; }
+.vac-level { font-weight: 600; font-size: .85rem; }
+.vac footer { margin-top: auto; padding-top: .5rem; display: flex; justify-content: space-between; align-items: center; gap: .8rem; font-size: .85rem; border-top: 1px dashed var(--border); }
+.linkbtn { border: 1px solid var(--border); background: var(--surface-2); color: var(--text); border-radius: 999px; padding: .2rem .7rem; font: inherit; font-size: .8rem; cursor: pointer; }
+.linkbtn:disabled { color: var(--good); cursor: default; }
+.closed-vacs { margin-top: 1rem; }
+.closed-vacs summary { cursor: pointer; font-weight: 700; }
+.closed-vacs[open] summary { margin-bottom: 1rem; }
+
 /* Paden */
 .paths { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 330px), 1fr)); gap: 1rem; }
 .path { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.1rem; box-shadow: var(--shadow); }

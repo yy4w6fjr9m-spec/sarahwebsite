@@ -74,6 +74,37 @@
       `<div class="heat-row"><span>${esc(s)}</span><span class="h h${v}">${lvl[v]}</span><span class="h h${f}">${lvl[f]}</span><span class="heat-note">${esc(t)}</span></div>`
     ).join("");
 
+  /* ───────────── Actuele vacatures ───────────── */
+  const today = new Date(); today.setHours(0, 0, 0, 0);
+  const fmtDate = (iso) => new Date(iso + "T00:00:00").toLocaleDateString("nl-NL", { day: "numeric", month: "long", year: "numeric" });
+  function vacCard(v) {
+    let badge, cls = v.status;
+    if (v.deadline) {
+      const days = Math.round((new Date(v.deadline + "T00:00:00") - today) / 864e5);
+      if (days < 0) { badge = "Verlopen " + fmtDate(v.deadline); cls = "gesloten"; }
+      else if (days === 0) badge = "Deadline vandaag";
+      else badge = `Nog ${days} ${days === 1 ? "dag" : "dagen"} · ${fmtDate(v.deadline)}`;
+    } else badge = "Deadline onbekend";
+    const stCls = { open: "st-volgende", onzeker: "st-later", gesloten: "st-dicht" }[cls];
+    return `<article class="vac vac-${cls}">
+      <header><span class="st ${stCls}">${esc(badge)}</span><span class="fitbadge f${v.fit}">${"●".repeat(v.fit)}${"○".repeat(3 - v.fit)}</span></header>
+      <h3>${esc(v.t)}</h3>
+      <p class="meta">${esc(v.org)} · ${esc(v.loc)}</p>
+      <p class="vac-level">${esc(v.niveau)}</p>
+      <p class="onote">${esc(v.note)}</p>
+      <footer><a href="${esc(v.u)}" target="_blank" rel="noopener">Bekijk vacature ↗</a>
+      <button type="button" class="linkbtn" data-track="${esc(v.org)}|${esc(v.t)}|${v.deadline || ""}">+ Tracker</button></footer>
+    </article>`;
+  }
+  const vacs = window.VACATURES || [];
+  const isClosed = (v) => v.status === "gesloten" || (v.deadline && new Date(v.deadline + "T00:00:00") < today);
+  const byDeadline = (a, b) => (a.deadline || "9999").localeCompare(b.deadline || "9999") || b.fit - a.fit;
+  const openVacs = vacs.filter((v) => !isClosed(v)).sort((a, b) => (a.status === "open" ? 0 : 1) - (b.status === "open" ? 0 : 1) || byDeadline(a, b));
+  const closedVacs = vacs.filter(isClosed).sort((a, b) => (b.deadline || "").localeCompare(a.deadline || ""));
+  $("#vacOpen").innerHTML = openVacs.map(vacCard).join("") || `<p class="empty">Geen open vacatures in de lijst.</p>`;
+  $("#vacClosed").innerHTML = closedVacs.map(vacCard).join("");
+  $("#vacClosedCount").textContent = closedVacs.length;
+
   /* ───────────── Organisaties ───────────── */
   const sectSel = $("#fSector");
   Object.entries(window.SECTOREN).forEach(([k, v]) => {
@@ -268,6 +299,18 @@
     }
   });
   renderTracker();
+  $("#vacatures").addEventListener("click", (e) => {
+    const b = e.target.closest("[data-track]");
+    if (!b) return;
+    const [org, functie, deadline] = b.dataset.track.split("|");
+    if (!rows.some((r) => r.org === org && r.functie === functie)) {
+      rows.push({ id: Date.now().toString(36), org, functie, deadline, status: "Interessant", notitie: "" });
+      store.set("tracker", rows);
+      renderTracker();
+    }
+    b.textContent = "✓ In tracker";
+    b.disabled = true;
+  });
 
   /* ───────────── Platforms & bronnen ───────────── */
   $("#platformList").innerHTML = window.PLATFORMS.map((p) =>

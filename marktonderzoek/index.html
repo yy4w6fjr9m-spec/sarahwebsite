@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Marktonderzoek Loopbaan</title>
+<meta name="description" content="Persoonlijk marktonderzoek naar de Nederlandse arbeidsmarkt voor internationale ontwikkeling, mensenrechten, overheid, IO's, NGO's, peacebuilding en universiteiten.">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Naar inhoud</a>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="#top">Marktonderzoek <span>· loopbaan</span></a>
+    <nav class="nav" aria-label="Secties">
+      <a href="#profiel">Profiel</a>
+      <a href="#markt">Markt 2026</a>
+      <a href="#organisaties">Organisaties</a>
+      <a href="#programmas">Traineeships</a>
+      <a href="#paden">Loopbaanpaden</a>
+      <a href="#salaris">Salaris</a>
+      <a href="#kalender">Kalender</a>
+      <a href="#solliciteren">Solliciteren</a>
+      <a href="#netwerk">Netwerk</a>
+      <a href="#plan">Actieplan</a>
+      <a href="#tracker">Tracker</a>
+      <a href="#bronnen">Bronnen</a>
+    </nav>
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Wissel licht/donker thema">◐</button>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ───────────── HERO ───────────── -->
+<section class="hero" id="top">
+  <p class="eyebrow">Persoonlijk marktonderzoek · peildatum <span data-peildatum></span></p>
+  <h1>Waar past jouw profiel op de Nederlandse arbeidsmarkt?</h1>
+  <p class="lead">Een volledig overzicht voor een cum laude honours-afgestudeerde van AUC met een MSc International Development Studies (UvA) en stage-ervaring bij Human Rights Watch. Het gaat over de overheid, internationale organisaties, NGO's, vrede en conflictoplossing, denktanks, universiteiten en het bedrijfsleven.</p>
+  <div class="kpis" id="kpis"></div>
+  <div class="callout warn">
+    <strong>Belangrijkste les uit het onderzoek:</strong> 2026 is een krappe markt aan de vraagkant van dit veld. Het budget voor ontwikkelingssamenwerking is gekort, de VN bezuinigt (UN80), het BZ-traineeship werft alleen intern en het ICC staat onder sancties. Kansen zijn er nog steeds, maar vragen om een <em>brede</em> strategie: meerdere sectoren tegelijk, en eerst ervaring opbouwen richting de JPO-eis van 2 jaar.
+  </div>
+</section>
+
+<!-- ───────────── PROFIEL ───────────── -->
+<section id="profiel">
+  <h2>1 · Profiel &amp; positionering</h2>
+  <div class="grid two">
+    <div class="card">
+      <h3>Sterke punten</h3>
+      <ul class="ticks">
+        <li><strong>Academische topprestatie:</strong> cum laude met Honours (AUC) is een duidelijk kwaliteitssignaal, vooral bij de overheid, denktanks, universiteiten en EU-selecties.</li>
+        <li><strong>Interdisciplinair:</strong> de liberal-arts-basis (AUC) en IDS (UvA) passen bij beleidswerk, dat altijd meerdere domeinen raakt.</li>
+        <li><strong>HRW-merk:</strong> een stage bij een van de meest gerespecteerde mensenrechtenorganisaties. Je hebt laten zien dat je rigoureus onderzoek doet, feiten checkt, documenteert en ervaring hebt met advocacy.</li>
+        <li><strong>Tweetalig NL/EN op hoog niveau:</strong> dat opent zowel de Nederlandse overheid als internationale organisaties. Veel internationale kandidaten in Den Haag spreken geen Nederlands.</li>
+        <li><strong>Ontwikkelingskennis:</strong> theorie over governance, conflict, ongelijkheid en postkoloniale kritiek. Dat is waardevol bij BZ, NGO's en kennisinstituten.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Gaten &amp; hoe je ze dicht</h3>
+      <table class="mini">
+        <thead><tr><th>Gat</th><th>Oplossing</th></tr></thead>
+        <tbody>
+          <tr><td>Weinig werkervaring na de master (JPO vraagt 2 jaar)</td><td>Start met een junior functie bij een NGO, de overheid of een denktank. Tel de maanden vanaf het afstuderen.</td></tr>
+          <tr><td>Geen of weinig veldervaring</td><td>Verkiezingswaarneming (OVSE), UNV, een EU-delegatietraineeship of een korte consultancy.</td></tr>
+          <tr><td>Derde taal</td><td>Frans (VN, Raad van Europa, Sahel) of Arabisch, Spaans of Russisch, afhankelijk van je regiofocus. Al B1 helpt.</td></tr>
+          <tr><td>Harde vaardigheden</td><td>MEAL (monitoring &amp; evaluatie), projectmanagement/subsidiebeheer, data (R/Python, NVivo), OSINT-cursus (Bellingcat).</td></tr>
+          <tr><td>Netwerk in Den Haag</td><td>Humanity Hub, Clingendael-events, Just Peace-festival, informatiegesprekken (zie §9).</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="card pitch">
+    <h3>Je pitch in één zin (pas aan per sector)</h3>
+    <div class="pitch-tabs" role="tablist">
+      <button class="chip active" data-pitch="ngo" type="button">NGO / mensenrechten</button>
+      <button class="chip" data-pitch="gov" type="button">Overheid</button>
+      <button class="chip" data-pitch="io" type="button">IO / VN</button>
+      <button class="chip" data-pitch="peace" type="button">Peacebuilding</button>
+      <button class="chip" data-pitch="uni" type="button">Universiteit</button>
+    </div>
+    <blockquote id="pitchText"></blockquote>
+  </div>
+</section>
+
+<!-- ───────────── MARKT ───────────── -->
+<section id="markt">
+  <h2>2 · De markt in 2026: wat speelt er?</h2>
+  <div class="grid three trends">
+    <article class="card trend down">
+      <span class="tag">NGO's · krimp</span>
+      <h3>Bezuinigingen op ontwikkelingssamenwerking</h3>
+      <p>Minister Klever verlaagde de subsidiepot voor NGO's voor 2026–2030 van ongeveer €1,4 miljard naar ongeveer €0,4 miljard. Het kabinet-Jetten draait volgens Partos ongeveer 25% daarvan terug over drie jaar, plus een kasschuif van €380 miljoen voor 2026. Het nieuwe beleidskader start pas halverwege 2026, waardoor er een financieringsgat en ontslagen ontstaan.</p>
+      <p class="impact"><strong>Gevolg:</strong> minder vacatures en meer ervaren concurrenten. Kijk vooral naar organisaties met eigen fondsen, EU- of private financiering (Amnesty, MSF, War Child, Bellingcat, FMO).</p>
+    </article>
+    <article class="card trend mixed">
+      <span class="tag">Rijk · gemengd</span>
+      <h3>Taakstelling, maar het Rijk groeit nog</h3>
+      <p>Het kabinet mikt op 22% krimp van het ambtelijk apparaat (2025–2029), maar het aantal rijksambtenaren steeg tot 160.016. Er stonden 21.005 vacatures open, ongeveer 6.800 minder dan in 2024. Door minder externe inhuur ontstaan juist vaste banen.</p>
+      <p class="impact"><strong>Gevolg:</strong> het Rijk blijft de grootste werkgever voor beleidsfuncties. Het BZ-traineeship IBBZ werft in 2026 alleen intern, dus het Rijkstraineeprogramma is de belangrijkste route.</p>
+    </article>
+    <article class="card trend down">
+      <span class="tag">VN · sterke krimp</span>
+      <h3>UN80-bezuinigingen</h3>
+      <p>De VN-begroting voor 2026 is 15,1% lager, met 18,8% minder staf. Het aantal vacatures is sinds 2025 met ongeveer 43% gedaald. OHCHR verliest 117 posten en UNHCR adverteert 83% minder vacatures.</p>
+      <p class="impact"><strong>Gevolg:</strong> de JPO-route (door Nederland betaald) is de belangrijkste ingang, maar vraagt eerst 2 jaar ervaring.</p>
+    </article>
+    <article class="card trend risk">
+      <span class="tag">Den Haag · risico</span>
+      <h3>Druk op het ICC</h3>
+      <p>De VS sanctioneerden in augustus 2026 de president van het Hof, en in september 2026 werd gedreigd met sancties tegen het hele Hof. Inmiddels zijn 9 van de 18 rechters gesanctioneerd.</p>
+      <p class="impact"><strong>Gevolg:</strong> inhoudelijk een topmatch, maar met onzekerheid over werving. Spreid je kansen over Eurojust, IRMCT, KSC, ICMP en NGO's rond het ICC.</p>
+    </article>
+    <article class="card trend up">
+      <span class="tag">Bedrijfsleven · groei</span>
+      <h3>Human rights due diligence</h3>
+      <p>De CSDDD is versmald via Omnibus I (in werking sinds 18 maart 2026), maar moet uiterlijk 26 juli 2028 in nationale wetgeving zijn omgezet. Bedrijven moeten nog steeds risicogerichte mensenrechten-due-diligence doen.</p>
+      <p class="impact"><strong>Gevolg:</strong> groeiende vraag naar mensenrechtenexpertise bij FMO, banken, adviesbureaus, SOMO en Fair Wear, en vaak betere salarissen.</p>
+    </article>
+    <article class="card trend mixed">
+      <span class="tag">Algemeen · afkoelend</span>
+      <h3>Arbeidsmarkt voor starters</h3>
+      <p>De werkloosheid ligt rond 4,0–4,1%, het hoogste niveau in vier jaar maar nog laag. Het aantal startersvacatures daalde volgens Randstad met 29% sinds januari 2024. De krapte neemt af.</p>
+      <p class="impact"><strong>Gevolg:</strong> meer concurrentie om juniorfuncties. Netwerk en gerichte sollicitaties wegen zwaarder dan massaal solliciteren.</p>
+    </article>
+  </div>
+
+  <h3 class="sub">Kansenkaart per sector</h3>
+  <div class="heat" id="heatmap"></div>
+  <p class="note">Kansen = beschikbaarheid van vacatures op juniorniveau × aansluiting op het profiel. Eigen inschatting op basis van het onderzoek.</p>
+</section>
+
+<!-- ───────────── ORGANISATIES ───────────── -->
+<section id="organisaties">
+  <h2>3 · Organisatiedatabase</h2>
+  <p>Ruim honderd organisaties, te filteren. De <strong>fit-score</strong> laat zien hoe goed de organisatie aansluit op het profiel: inhoudelijke match met mensenrechten, ontwikkeling of conflict, realistische instapfuncties en of de HRW- en IDS-achtergrond direct telt.</p>
+  <div class="filters">
+    <input type="search" id="fQ" placeholder="Zoek op naam, thema of functie…" aria-label="Zoeken">
+    <select id="fSector" aria-label="Sector"><option value="">Alle sectoren</option></select>
+    <select id="fFit" aria-label="Fit">
+      <option value="">Elke fit</option>
+      <option value="3">Hoge fit</option>
+      <option value="2">Middel of hoger</option>
+    </select>
+    <select id="fNl" aria-label="Taal">
+      <option value="">Elke taaleis</option>
+      <option value="ja">Nederlands vereist</option>
+      <option value="plus">Nederlands = pluspunt</option>
+      <option value="nee">Engels volstaat</option>
+    </select>
+    <select id="fLoc" aria-label="Locatie">
+      <option value="">NL + buitenland</option>
+      <option value="nl">Alleen Nederland</option>
+      <option value="int">Alleen buitenland</option>
+    </select>
+    <label class="check"><input type="checkbox" id="fFav"> Alleen favorieten ★</label>
+  </div>
+  <p class="count" id="orgCount"></p>
+  <div class="orgs" id="orgList"></div>
+</section>
+
+<!-- ───────────── PROGRAMMA'S ───────────── -->
+<section id="programmas">
+  <h2>4 · Traineeships &amp; instapprogramma's</h2>
+  <p>De status geldt per <span data-peildatum></span>. Datums met "verwacht" zijn afgeleid uit eerdere rondes en nog niet officieel bevestigd.</p>
+  <div class="legend">
+    <span class="st st-volgende">volgende ronde</span>
+    <span class="st st-check">doorlopend / check</span>
+    <span class="st st-later">later (eisen)</span>
+    <span class="st st-dicht">gesloten</span>
+  </div>
+  <div class="progs" id="progList"></div>
+</section>
+
+<!-- ───────────── PADEN ───────────── -->
+<section id="paden">
+  <h2>5 · Loopbaanpaden</h2>
+  <p>Zes realistische trajecten van 5 tot 7 jaar. Ze sluiten elkaar niet uit: de eerste 2 jaar kunnen bij meerdere paden meetellen.</p>
+  <div class="paths">
+    <div class="path"><h3>A · Diplomatie &amp; overheid</h3><ol>
+      <li><b>Jaar 0–2</b> Rijkstrainee (start sept. 2027) of beleidsmedewerker bij J&amp;V, BZK of RVO</li>
+      <li><b>Jaar 2–4</b> Beleidsmedewerker BZ (DMM/DSH) via interne werving</li>
+      <li><b>Jaar 4+</b> Plaatsing op een post: ambassade of permanente vertegenwoordiging (Genève/New York)</li></ol></div>
+    <div class="path"><h3>B · Verenigde Naties</h3><ol>
+      <li><b>Jaar 0–2</b> Junior functie bij een NGO, denktank of de overheid (telt voor de JPO-eis)</li>
+      <li><b>Jaar 2–5</b> JPO (≤ 32 jaar) bij OHCHR, UNDP of DPPA</li>
+      <li><b>Jaar 5+</b> P-2/P-3 via reguliere sollicitatie of conversie</li></ol></div>
+    <div class="path"><h3>C · Mensenrechten-NGO</h3><ol>
+      <li><b>Jaar 0–2</b> Projectmedewerker of junior onderzoeker (Amnesty NL, Justice &amp; Peace, NHC, PILP)</li>
+      <li><b>Jaar 2–4</b> Associate of research assistant bij HRW of Amnesty International</li>
+      <li><b>Jaar 4+</b> Researcher voor een land of thema, of advocacy officer</li></ol></div>
+    <div class="path"><h3>D · Peacebuilding &amp; mediation</h3><ol>
+      <li><b>Jaar 0–2</b> Junior bij PAX, GPPAC, Impunity Watch, NIMD of de Clingendael Academy</li>
+      <li><b>Jaar 2–4</b> Programme officer bij EIP, Crisis Group of de OVSE</li>
+      <li><b>Jaar 4+</b> Mediation support (VN DPPA, HD Centre) of conflictadviseur bij BZ</li></ol></div>
+    <div class="path"><h3>E · Bedrijfsleven &amp; mensenrechten</h3><ol>
+      <li><b>Jaar 0–2</b> Junior onderzoeker bij SOMO of Fair Wear, of junior consultant bij Ecorys</li>
+      <li><b>Jaar 2–4</b> ESG- of mensenrechtenanalist bij FMO of een bank</li>
+      <li><b>Jaar 4+</b> CSDDD-specialist. De vraag piekt rond de omzetting in 2028</li></ol></div>
+    <div class="path"><h3>F · Academie &amp; kennis</h3><ol>
+      <li><b>Jaar 0–1</b> Onderzoeksassistent of junior docent (UvA, AUC, LUC, ISS)</li>
+      <li><b>Jaar 1–5</b> Promotietraject (mensenrechten, conflict of migratie)</li>
+      <li><b>Jaar 5+</b> Postdoc of universitair docent, of een overstap naar een denktank of IO als expert</li></ol></div>
+  </div>
+</section>
+
+<!-- ───────────── SALARIS ───────────── -->
+<section id="salaris">
+  <h2>6 · Salarisbenchmarks</h2>
+  <p>Bruto per maand bij een voltijdbaan, indicatief. Stages en traineeships zijn de vaste bedragen. Rijksbedragen zijn exclusief het Individueel Keuzebudget van 16,5%.</p>
+  <div class="bars" id="salaryChart"></div>
+  <div class="card">
+    <h3>Internationaal (VN), ter vergelijking</h3>
+    <p>De VN-salarissen zijn in USD per jaar, netto (belastingvrij). Er komt een standplaatstoelage bovenop.</p>
+    <ul>
+      <li><strong>P-1 net base:</strong> $43.834 – $59.617</li>
+      <li><strong>P-2 net base:</strong> $56.046 – $74.640, plus standplaatstoelage. New York +76%, Genève +84%, dus in Genève een P-2 trede 1 van ongeveer $103k per jaar.</li>
+      <li>Er gaan ongeveer 7,9% pensioenpremie en een zorgpremie vanaf. In het veld komen er vaak hardship- en andere toelagen bij.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ───────────── KALENDER ───────────── -->
+<section id="kalender">
+  <h2>7 · Deadline-kalender (okt. 2026 – sept. 2027)</h2>
+  <div class="timeline" id="timeline"></div>
+</section>
+
+<!-- ───────────── SOLLICITEREN ───────────── -->
+<section id="solliciteren">
+  <h2>8 · Sollicitatievoorbereiding per sector</h2>
+  <div class="grid two">
+    <details class="card" open><summary>Rijksoverheid</summary>
+      <ul>
+        <li>Er wordt gewerkt met competentiegerichte interviews volgens de STAR-methode. Bereid 6 tot 8 voorbeelden voor (HRW, scriptie, honours, bestuur of vrijwilligerswerk).</li>
+        <li>Je krijgt vaak een schriftelijke opdracht: een beleidsnotitie of nota aan de minister van 1 à 2 A4. Oefen met kort, helder Nederlands ambtelijk schrijven.</li>
+        <li>Het Rijkstraineeprogramma heeft een online dossier, assessments en verplichte oriëntatiedagen.</li>
+        <li>Je hebt een VOG nodig. Bij BZ, Defensie en J&amp;V vaak ook een AIVD-veiligheidsonderzoek (A/B/C). Houd rekening met een paar weken tot maanden doorlooptijd en wees volledig over verblijf in het buitenland.</li>
+      </ul></details>
+    <details class="card" open><summary>VN / IO's</summary>
+      <ul>
+        <li>Er wordt gewerkt met een Competency-Based Interview (CBI) op basis van de UN Values &amp; Competencies (Communication, Planning &amp; Organising, Teamwork…).</li>
+        <li>Er is vaak een schriftelijke toets van 2 à 3 uur: een analyse, talking points of een memo.</li>
+        <li>Houd je profiel bij in Inspira of het Personal History Profile en noem meetbare resultaten.</li>
+        <li>Bij een JPO selecteren BZ, Nedworc en de organisatie samen. Je motivatie voor de specifieke post weegt zwaar.</li>
+      </ul></details>
+    <details class="card"><summary>NGO's</summary>
+      <ul>
+        <li>Verwacht een schrijfopdracht: een persbericht, een beleidsreactie of een korte onderzoeksopzet.</li>
+        <li>Er wordt vaak een casus gegeven, bijvoorbeeld "hoe zou je dit dossier aanpakken?". Gebruik daarbij concreet je HRW-methodologie.</li>
+        <li>Benoem dat je fondsen kunt werven en kunt rapporteren aan donoren. Dat is in 2026 extra belangrijk door de bezuinigingen.</li>
+        <li>Toon dat je inhoudelijk bij de missie past en kennis hebt van het Nederlandse beleidskader 2026–2030.</li>
+      </ul></details>
+    <details class="card"><summary>Denktanks &amp; universiteiten</summary>
+      <ul>
+        <li>Houd een writing sample klaar, zoals een policy brief of een scriptiehoofdstuk. Inhoud en stijl tellen allebei.</li>
+        <li>Voor een promotieplek: een onderzoeksvoorstel van 2 à 5 pagina's. Neem vooraf contact op met de beoogde promotor.</li>
+        <li>Bij een junior docentfunctie geef je soms een proefcollege. De onderwijservaring van AUC geldt als pluspunt.</li>
+        <li>Noem cijfers en honours expliciet. Op deze plekken tellen ze echt mee.</li>
+      </ul></details>
+    <details class="card"><summary>EU</summary>
+      <ul>
+        <li>EPSO-tests: verbaal, numeriek en abstract redeneren, plus EU-kennis. Oefen met online platforms.</li>
+        <li>Blue Book: de motivatie per DG telt. Een voorselectie door de diensten zelf is cruciaal, dus netwerk met NL-ambtenaren in Brussel.</li>
+        <li>Met een contractagent-aanstelling (CAST) kom je vaak sneller binnen dan via AD5.</li>
+      </ul></details>
+    <details class="card"><summary>Cv &amp; brief: algemene tips</summary>
+      <ul>
+        <li>Maak <strong>twee cv-varianten</strong>: een Nederlands overheids-cv van 2 pagina's en een internationaal cv in het Engels (ook in UN-stijl).</li>
+        <li>Zet de HRW-stage bovenaan met concrete resultaten: rapporten, interviews, data en advocacy-uitkomsten.</li>
+        <li>Vermeld je taalniveaus volgens het ERK (C2/C1/B1…).</li>
+        <li>Schrijf per sollicitatie een nieuwe openingsalinea die aansluit op de actualiteit van die organisatie.</li>
+      </ul></details>
+  </div>
+</section>
+
+<!-- ───────────── NETWERK ───────────── -->
+<section id="netwerk">
+  <h2>9 · Netwerk &amp; de verborgen arbeidsmarkt</h2>
+  <p>In dit veld wordt een groot deel van de juniorfuncties ingevuld via netwerk, eerdere stagiairs of interne kandidaten. Netwerken loont dus.</p>
+  <div class="grid three">
+    <div class="card"><h3>Bestaand netwerk</h3><ul>
+      <li>HRW-begeleiders en -collega's: vraag om een referentie en introducties</li>
+      <li>AUC-alumni (LinkedIn → zoek op "Amsterdam University College" plus organisatienaam)</li>
+      <li>IDS-docenten en scriptiebegeleiders, ook voor onderzoeks- en promotieplekken</li>
+      <li>Medestudenten die nu bij BZ, NGO's of IO's werken</li></ul></div>
+    <div class="card"><h3>Plekken &amp; evenementen</h3><ul>
+      <li>The Hague Humanity Hub: meer dan 230 professionals van 90 organisaties, met events</li>
+      <li>Clingendael- en ISS-lezingen en publieke debatten</li>
+      <li>Just Peace The Hague (festival rond de Internationale Dag van de Vrede)</li>
+      <li>NVVN (Nederlandse Vereniging voor de VN) en de jongerentak van de Atlantische Commissie</li>
+      <li>Partos-bijeenkomsten en het Innovation Festival</li></ul></div>
+    <div class="card"><h3>Informatiegesprekken</h3><ol>
+      <li>Kies 15 mensen in functies 3 tot 5 jaar verder dan jij</li>
+      <li>Stuur een kort bericht: 3 zinnen, met een concrete vraag en 20 minuten koffie</li>
+      <li>Vraag naar hun route, welke vacatures eraan komen en wie je nog meer zou moeten spreken</li>
+      <li>Stuur binnen 24 uur een bedankje en houd contact elke 2 à 3 maanden</li></ol></div>
+  </div>
+</section>
+
+<!-- ───────────── ACTIEPLAN ───────────── -->
+<section id="plan">
+  <h2>10 · Actieplan 30 / 60 / 90 dagen</h2>
+  <p>Vink af wat je gedaan hebt. Je voortgang wordt alleen in deze browser bewaard.</p>
+  <div class="progress"><div class="progress-bar" id="planBar"></div></div>
+  <div class="grid three" id="planList"></div>
+</section>
+
+<!-- ───────────── TRACKER ───────────── -->
+<section id="tracker">
+  <h2>11 · Sollicitatietracker</h2>
+  <p>Houd je sollicitaties bij. De gegevens worden alleen lokaal in deze browser opgeslagen. Exporteer ze regelmatig als CSV voor een back-up.</p>
+  <form id="trackForm" class="track-form">
+    <input name="org" placeholder="Organisatie" required>
+    <input name="functie" placeholder="Functie" required>
+    <input name="deadline" type="date" aria-label="Deadline">
+    <select name="status" aria-label="Status">
+      <option>Interessant</option><option>Bezig met brief</option><option>Verstuurd</option>
+      <option>Gesprek</option><option>Aanbod</option><option>Afgewezen</option>
+    </select>
+    <input name="notitie" placeholder="Notitie / link">
+    <button type="submit">Toevoegen</button>
+  </form>
+  <div class="table-wrap">
+    <table class="track" id="trackTable">
+      <thead><tr><th>Organisatie</th><th>Functie</th><th>Deadline</th><th>Status</th><th>Notitie</th><th></th></tr></thead>
+      <tbody></tbody>
+    </table>
+  </div>
+  <p class="empty" id="trackEmpty">Nog niets toegevoegd. Tip: gebruik ☆ in de organisatiedatabase om favorieten te markeren.</p>
+  <button type="button" class="ghost" id="exportCsv">Exporteer CSV</button>
+</section>
+
+<!-- ───────────── BRONNEN ───────────── -->
+<section id="bronnen">
+  <h2>12 · Vacatureplatforms &amp; bronnen</h2>
+  <h3 class="sub">Vacatureplatforms</h3>
+  <div class="platforms" id="platformList"></div>
+  <h3 class="sub">Bronnen van dit onderzoek</h3>
+  <ol class="sources" id="sourceList"></ol>
+  <p class="note">Methode: deskresearch met webzoekopdrachten op <span data-peildatum></span>. Feiten met een bron staan hierboven. Fit-scores, loopbaanpaden en verwachte datums zijn eigen inschattingen. Controleer deadlines en eisen altijd op de officiële pagina voordat je solliciteert. Organisatiebeschrijvingen zonder bron zijn gebaseerd op algemene kennis van het veld.</p>
+</section>
+
+</main>
+
+<footer class="foot">Persoonlijk marktonderzoek · los van de hoofdsite · peildatum <span data-peildatum></span></footer>
+
+<script src="assets/data.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

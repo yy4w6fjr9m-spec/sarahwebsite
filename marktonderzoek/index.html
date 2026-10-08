@@ -49,7 +49,7 @@
 <!-- ───────────── VACATURES ───────────── -->
 <section id="vacatures">
   <h2>Nu open: actuele vacatures</h2>
-  <p>Concrete vacatures, gevonden op <span data-peildatum></span>. Zoekmachines tonen maar een klein deel van wat er openstaat, dus dit is een momentopname en geen volledige lijst. Controleer elke vacature op de site van de werkgever.</p>
+  <p>Concrete vacatures, direct gecontroleerd op de sites van werkgevers en vacaturebanken op <span data-vacgecheckt></span>: Werken voor Nederland, AcademicTransfer, UNjobs, Impactpool, OneWorld en ruim dertig carrièrepagina's. Klik op een vacature voor de volledige tekst en controleer de deadline voordat je solliciteert.</p>
   <div class="legend">
     <span class="st st-volgende">open, deadline bevestigd</span>
     <span class="st st-later">gezien, status onzeker</span>
@@ -59,6 +59,10 @@
   <details class="card closed-vacs">
     <summary>Net gesloten, maar laat zien wat er langskomt (<span id="vacClosedCount"></span>)</summary>
     <div class="vacs" id="vacClosed"></div>
+  </details>
+  <details class="card closed-vacs">
+    <summary>Gecontroleerd: nu geen passende vacature (<span id="geenCount"></span>)</summary>
+    <ul class="geen" id="geenList"></ul>
   </details>
 </section>
 

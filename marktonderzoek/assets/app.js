@@ -99,11 +99,15 @@
   const vacs = window.VACATURES || [];
   const isClosed = (v) => v.status === "gesloten" || (v.deadline && new Date(v.deadline + "T00:00:00") < today);
   const byDeadline = (a, b) => (a.deadline || "9999").localeCompare(b.deadline || "9999") || b.fit - a.fit;
-  const openVacs = vacs.filter((v) => !isClosed(v)).sort((a, b) => (a.status === "open" ? 0 : 1) - (b.status === "open" ? 0 : 1) || byDeadline(a, b));
+  const openVacs = vacs.filter((v) => !isClosed(v)).sort((a, b) => b.fit - a.fit || (a.deadline || "9999").localeCompare(b.deadline || "9999"));
   const closedVacs = vacs.filter(isClosed).sort((a, b) => (b.deadline || "").localeCompare(a.deadline || ""));
   $("#vacOpen").innerHTML = openVacs.map(vacCard).join("") || `<p class="empty">Geen open vacatures in de lijst.</p>`;
   $("#vacClosed").innerHTML = closedVacs.map(vacCard).join("");
   $("#vacClosedCount").textContent = closedVacs.length;
+  const geen = window.GEEN_VACATURE || [];
+  $("#geenCount").textContent = geen.length;
+  $("#geenList").innerHTML = geen.map(([n, s, u]) => `<li><a href="${esc(u)}" target="_blank" rel="noopener">${esc(n)} ↗</a> <span>${esc(s)}</span></li>`).join("");
+  $$("[data-vacgecheckt]").forEach((el) => (el.textContent = window.VACATURES_GECHECKT || window.PEILDATUM));
 
   /* ───────────── Organisaties ───────────── */
   const sectSel = $("#fSector");
